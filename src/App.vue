@@ -1,16 +1,9 @@
 <template>
-  <index></index>
-  <!-- <div id="nav"><router-link to="/"></router-link></div> -->
-  <!-- <router-view /> -->
+  <router-view />
 </template>
 <script lang="ts">
 import { defineComponent } from "vue"
-import index from "@/views/index.vue"
-export default defineComponent({
-  components: {
-    index,
-  },
-})
+export default defineComponent({})
 </script>
 
 <style>

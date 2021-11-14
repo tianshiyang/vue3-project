@@ -1,17 +1,14 @@
 <template>
-  <h1>{{ msg }}</h1>
+  <div>{{ route.query.msg }}</div>
 </template>
 <script lang="ts">
 import { defineComponent } from "vue"
 import { useRoute } from "vue-router"
-
 export default defineComponent({
   setup() {
-    const router = useRoute()
-    const msg = "reactive和ref的区别"
+    const route = useRoute()
     return {
-      msg,
-      router,
+      route,
     }
   },
 })

@@ -1,11 +1,19 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router"
-import index from "@/views/index.vue"
-
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "index",
-    component: index,
+    component: import("@/views/index.vue"),
+  },
+  {
+    path: "/reactive-ref",
+    name: "reactive-ref",
+    component: () => import("@/views/reactive_ref/index.vue"),
+  },
+  {
+    path: "/study-router",
+    name: "study-router",
+    component: () => import("@/views/router/index.vue"),
   },
 ]
 

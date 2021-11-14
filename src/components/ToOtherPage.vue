@@ -26,9 +26,20 @@ export default defineComponent({
   setup(props) {
     const router = useRouter()
     const goPath = () => {
-      router.push({
-        path: props.path,
-      })
+      let params = {}
+      if (props.path === "study-router") {
+        params = {
+          path: props.path,
+          query: {
+            msg: "测试vue-route 中的 query",
+          },
+        }
+      } else {
+        params = {
+          path: props.path,
+        }
+      }
+      router.push(params)
     }
     return {
       goPath,
@@ -47,7 +58,8 @@ export default defineComponent({
   font-size: 16px;
   padding: 10px 20px;
   background: #fffccc;
-  border: #aabbcc;
+  border: 1px solid #aabbcc;
   cursor: pointer;
+  margin: 10px 20px;
 }
 </style>
