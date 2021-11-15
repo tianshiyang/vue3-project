@@ -15,6 +15,11 @@ const routes: Array<RouteRecordRaw> = [
     name: "study-router",
     component: () => import("@/views/router/index.vue"),
   },
+  {
+    path: "/component_emit",
+    name: "component_emit",
+    component: () => import("@/views/component_emit/father.vue"),
+  },
 ]
 
 const router = createRouter({
