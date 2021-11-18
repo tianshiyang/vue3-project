@@ -20,6 +20,11 @@ const routes: Array<RouteRecordRaw> = [
     name: "component_emit",
     component: () => import("@/views/component_emit/father.vue"),
   },
+  {
+    path: "/watch-computed",
+    name: "watch-computed",
+    component: () => import("@/views/watch_computed/index.vue"),
+  },
 ]
 
 const router = createRouter({
