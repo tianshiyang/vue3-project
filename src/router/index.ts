@@ -25,6 +25,11 @@ const routes: Array<RouteRecordRaw> = [
     name: "watch-computed",
     component: () => import("@/views/watch_computed/index.vue"),
   },
+  {
+    path: "/if-show-class-for",
+    name: "if-show-class-for",
+    component: () => import("@/views/if-show-class-for/index.vue"),
+  },
 ]
 
 const router = createRouter({
