@@ -30,6 +30,11 @@ const routes: Array<RouteRecordRaw> = [
     name: "if-show-class-for",
     component: () => import("@/views/if-show-class-for/index.vue"),
   },
+  {
+    path: "/vue-bus",
+    name: "vue-bus",
+    component: () => import("@/views/vue-bus/index.vue"),
+  },
 ]
 
 const router = createRouter({
