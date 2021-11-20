@@ -31,9 +31,9 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("@/views/if-show-class-for/index.vue"),
   },
   {
-    path: "/vue-bus",
-    name: "vue-bus",
-    component: () => import("@/views/vue-bus/index.vue"),
+    path: "/provide-inject",
+    name: "provide-inject",
+    component: () => import("@/views/provide_inject/index.vue"),
   },
 ]
 

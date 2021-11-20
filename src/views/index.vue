@@ -5,7 +5,7 @@
     <ToOtherPage :title="title.component_emit" path="component_emit"></ToOtherPage>
     <ToOtherPage :title="title.watch_computed" path="watch-computed"></ToOtherPage>
     <ToOtherPage :title="title.if_show_class_for" path="if-show-class-for"></ToOtherPage>
-    <ToOtherPage :title="title.vue_bus" path="vue-bus"></ToOtherPage>
+    <ToOtherPage :title="title.vue_bus" path="provide-inject"></ToOtherPage>
   </div>
 </template>
 
@@ -23,7 +23,7 @@ export default defineComponent({
       component_emit: "组件传值",
       watch_computed: "watch和computed",
       if_show_class_for: "v-for, v-if, v-show, :class学习",
-      vue_bus: "非父子组件传值，bus",
+      vue_bus: "provide-inject用法",
     }
     return {
       title,
