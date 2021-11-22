@@ -6,6 +6,7 @@
     <ToOtherPage :title="title.watch_computed" path="watch-computed"></ToOtherPage>
     <ToOtherPage :title="title.if_show_class_for" path="if-show-class-for"></ToOtherPage>
     <ToOtherPage :title="title.vue_bus" path="provide-inject"></ToOtherPage>
+    <ToOtherPage :title="title.directive" path="directive"></ToOtherPage>
   </div>
 </template>
 
@@ -24,6 +25,7 @@ export default defineComponent({
       watch_computed: "watch和computed",
       if_show_class_for: "v-for, v-if, v-show, :class学习",
       vue_bus: "provide-inject用法",
+      directive: "vue-自定义指令",
     }
     return {
       title,

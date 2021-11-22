@@ -35,6 +35,11 @@ const routes: Array<RouteRecordRaw> = [
     name: "provide-inject",
     component: () => import("@/views/provide_inject/index.vue"),
   },
+  {
+    path: "/directive",
+    name: "directive",
+    component: () => import("@/views/directive/index.vue"),
+  },
 ]
 
 const router = createRouter({
