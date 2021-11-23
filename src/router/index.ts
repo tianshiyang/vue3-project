@@ -40,6 +40,11 @@ const routes: Array<RouteRecordRaw> = [
     name: "directive",
     component: () => import("@/views/directive/index.vue"),
   },
+  {
+    path: "/mixin",
+    name: "mixin",
+    component: () => import("@/views/mixin/index.vue"),
+  },
 ]
 
 const router = createRouter({

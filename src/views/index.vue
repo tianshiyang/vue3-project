@@ -7,6 +7,7 @@
     <ToOtherPage :title="title.if_show_class_for" path="if-show-class-for"></ToOtherPage>
     <ToOtherPage :title="title.vue_bus" path="provide-inject"></ToOtherPage>
     <ToOtherPage :title="title.directive" path="directive"></ToOtherPage>
+    <ToOtherPage :title="title.mixin" path="mixin"></ToOtherPage>
   </div>
 </template>
 
@@ -26,6 +27,7 @@ export default defineComponent({
       if_show_class_for: "v-for, v-if, v-show, :class学习",
       vue_bus: "provide-inject用法",
       directive: "vue-自定义指令",
+      mixin: "mixin混入",
     }
     return {
       title,
