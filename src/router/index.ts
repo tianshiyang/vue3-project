@@ -1,3 +1,4 @@
+// import { KeepAlive } from "@vue/runtime-core"
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router"
 const routes: Array<RouteRecordRaw> = [
   {
@@ -44,6 +45,14 @@ const routes: Array<RouteRecordRaw> = [
     path: "/mixin",
     name: "mixin",
     component: () => import("@/views/mixin/index.vue"),
+  },
+  {
+    path: "/life-cycle",
+    name: "life-cycle",
+    meta: {
+      KeepAlive: true,
+    },
+    component: () => import("@/views/life-cycle/index.vue"),
   },
 ]
 

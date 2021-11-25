@@ -8,6 +8,9 @@
     <ToOtherPage :title="title.vue_bus" path="provide-inject"></ToOtherPage>
     <ToOtherPage :title="title.directive" path="directive"></ToOtherPage>
     <ToOtherPage :title="title.mixin" path="mixin"></ToOtherPage>
+    <keep-alive>
+      <ToOtherPage :title="title.life_cycle" path="life-cycle" :is="index"></ToOtherPage>
+    </keep-alive>
   </div>
 </template>
 
@@ -28,6 +31,7 @@ export default defineComponent({
       vue_bus: "provide-inject用法",
       directive: "vue-自定义指令",
       mixin: "mixin混入",
+      life_cycle: "生命周期",
     }
     return {
       title,
