@@ -9,6 +9,9 @@
     <ToOtherPage :title="title.directive" path="directive"></ToOtherPage>
     <ToOtherPage :title="title.mixin" path="mixin"></ToOtherPage>
     <ToOtherPage :title="title.vuex" path="vuex"></ToOtherPage>
+    <keep-alive>
+      <ToOtherPage :title="title.life_cycle" path="life-cycle" :is="index"></ToOtherPage>
+    </keep-alive>
   </div>
 </template>
 
@@ -30,6 +33,7 @@ export default defineComponent({
       directive: "vue-自定义指令",
       mixin: "mixin混入",
       vuex: "vuex",
+      life_cycle: "生命周期",
     }
     return {
       title,
