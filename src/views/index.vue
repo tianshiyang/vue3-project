@@ -8,6 +8,7 @@
     <ToOtherPage :title="title.vue_bus" path="provide-inject"></ToOtherPage>
     <ToOtherPage :title="title.directive" path="directive"></ToOtherPage>
     <ToOtherPage :title="title.mixin" path="mixin"></ToOtherPage>
+    <ToOtherPage :title="title.vuex" path="vuex"></ToOtherPage>
   </div>
 </template>
 
@@ -28,6 +29,7 @@ export default defineComponent({
       vue_bus: "provide-inject用法",
       directive: "vue-自定义指令",
       mixin: "mixin混入",
+      vuex: "vuex",
     }
     return {
       title,

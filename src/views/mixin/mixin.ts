@@ -1,4 +1,5 @@
 const baseMixin = {
+  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   data() {
     return {
       mixinData: {
@@ -7,6 +8,7 @@ const baseMixin = {
     }
   },
   methods: {
+    // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
     sayHi() {
       console.log(this.mixinData.name)
     },
