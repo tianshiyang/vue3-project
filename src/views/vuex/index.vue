@@ -10,6 +10,7 @@ export default defineComponent({
   name: "index",
   setup() {
     const store = useStore()
+    console.log(store)
     const changeStoreCount = () => {
       store.commit("addCount", 1)
     }
