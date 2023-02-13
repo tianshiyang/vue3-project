@@ -2,6 +2,7 @@
   <div class="box" @click="goPath">
     <div class="title">标题：{{ title }}</div>
     <div class="info">描述：{{ info }}</div>
+    <slot name="aa" :bb="{ name: 123 }"></slot>
   </div>
 </template>
 <script lang="ts">

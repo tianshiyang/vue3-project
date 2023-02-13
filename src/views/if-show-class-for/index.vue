@@ -71,6 +71,10 @@ export default defineComponent({
         age: 15,
       },
     ])
+    const person = reactive({
+      name: "張三",
+    })
+    console.log(ref(111))
     let changeCurrent = (index) => {
       before_14_tabel.value[index].age++
     }

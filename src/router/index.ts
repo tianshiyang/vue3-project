@@ -59,6 +59,15 @@ const routes: Array<RouteRecordRaw> = [
     },
     component: () => import("@/views/life-cycle/index.vue"),
   },
+  {
+    path: "/render",
+    name: "render",
+    component: () => import("@/views/render/index.vue"),
+  },
+  {
+    path: "/testDir",
+    component: () => import("@/views/directive/directive.vue"),
+  },
 ]
 
 const router = createRouter({

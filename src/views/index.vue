@@ -1,6 +1,10 @@
 <template>
   <div class="index_box">
-    <ToOtherPage :title="title.reactiveRef" path="reactive-ref"></ToOtherPage>
+    <ToOtherPage :title="title.reactiveRef" path="reactive-ref">
+      <template #aa="{bb}">
+        {{  bb  }}
+      </template>
+    </ToOtherPage>
     <ToOtherPage :title="title.router" path="study-router"></ToOtherPage>
     <ToOtherPage :title="title.component_emit" path="component_emit"></ToOtherPage>
     <ToOtherPage :title="title.watch_computed" path="watch-computed"></ToOtherPage>
@@ -12,12 +16,14 @@
     <keep-alive>
       <ToOtherPage :title="title.life_cycle" path="life-cycle" :is="index"></ToOtherPage>
     </keep-alive>
+    <ToOtherPage :title="title.render" path="render"></ToOtherPage>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue"
 import ToOtherPage from "@/components/ToOtherPage.vue"
+import { onBeforeUnmount } from "vue"
 export default defineComponent({
   components: {
     ToOtherPage,
@@ -34,7 +40,11 @@ export default defineComponent({
       mixin: "mixin混入",
       vuex: "vuex",
       life_cycle: "生命周期",
+      render: "rander创建模板",
     }
+    onBeforeUnmount(() => {
+      console.log(12321323213)
+    })
     return {
       title,
     }
