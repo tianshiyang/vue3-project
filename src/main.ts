@@ -2,6 +2,8 @@ import { createApp } from "vue"
 import App from "./App.vue"
 import router from "./router"
 import store from "./store"
+import vant from "vant"
+import "vant/lib/index.css"
 
 const app = createApp(App)
 
@@ -18,4 +20,4 @@ app.directive("lazy-img", {
     console.log(el.offsetTop)
   },
 })
-app.use(store).use(router).mount("#app")
+app.use(store).use(router).use(vant).mount("#app")

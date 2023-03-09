@@ -68,6 +68,35 @@ const routes: Array<RouteRecordRaw> = [
     path: "/testDir",
     component: () => import("@/views/directive/directive.vue"),
   },
+  {
+    path: "/shop",
+    component: () => import("@/views/shopping/baseContainer.vue"),
+    children: [
+      {
+        path: "homePage",
+        name: "homePage",
+        component: () => import("@/views/shopping/homePage.vue"),
+        meta: {
+          title: "首页",
+        },
+      },
+      {
+        path: "car",
+        component: () => import("@/views/shopping/car.vue"),
+        meta: {
+          title: "购物车",
+        },
+      },
+      {
+        path: "mine",
+        name: "mine",
+        meta: {
+          title: "我的",
+        },
+        component: () => import("@/views/shopping/mine.vue"),
+      },
+    ],
+  },
 ]
 
 const router = createRouter({
